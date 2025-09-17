@@ -1,77 +1,208 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Oksana Fadyeyeva | Cloud Engineer | DevOps Engineer (Junior)</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+/* --- Basic Styles & Typography --- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
- <nav class="navbar">
-    <div class="logo">Cloud Portfolio</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#expertise">Expertise</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+:root {
+    --primary-color: #3498db;  /* A nice blue */
+    --secondary-color: #2c3e50; /* Dark, slate-like color */
+    --background-color: #ecf0f1; /* Light gray */
+    --text-color: #333;
+    --light-text-color: #fff;
+    --accent-color: #e74c3c; /* Red for CTAs */
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
 
-  <header class="hero">
-    <p class="pre-heading">Hi, my name is</p>
-    <h1>Oksana Fadyeyeva</h1>
-    <h2>Junior Cloud & DevOps Engineer | Certified Scrum Master</h2>
-    <p class="intro">
-      Motivated Cloud Developer and Junior CI/CD Engineer with a strong project management background and hands-on AWS training. I bring a unique blend of technical skills and Agile delivery expertise to cloud and DevOps teams.
-    </p>
-    <a href="#contact" class="cta">Get in Touch</a>
-  </header>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I hold a Master’s degree in Computer Science and am a certified Scrum Master. I recently completed the AWS re/Start program, gaining hands-on experience with core AWS services, Linux, Python scripting, networking, and databases. I'm passionate about building reliable cloud infrastructure and automating processes for efficiency. Fluent in English, Russian, and Ukrainian, with working knowledge of Spanish and Catalan.
-    </p>
-  </section>
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    scroll-behavior: smooth;
+}
 
-  <section id="expertise" class="section">
-    <h2>Expertise</h2>
-    <ul>
-      <li>AWS Core Services: EC2, S3, IAM, Lambda, RDS, DynamoDB, CloudFormation</li>
-      <li>Linux OS: User management, permissions, scripting, process control</li>
-      <li>Python Scripting for automation</li>
-      <li>Networking: TCP/IP, subnetting, firewall rules</li>
-      <li>SQL and NoSQL Databases</li>
-      <li>CI/CD Concepts and basic implementation</li>
-      <li>Agile Methodologies (Scrum, Kanban), Jira, Confluence</li>
-      <li>Version Control: Git & GitHub</li>
-    </ul>
-  </section>
+h1, h2, h3 {
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 0.5em;
+}
 
-  <section id="projects" class="section">
-    <h2>Cloud Projects</h2>
-    <ul>
-      <li>Deployed multi-tier web app using EC2, S3, and RDS (MySQL)</li>
-      <li>Built serverless API with AWS Lambda & DynamoDB</li>
-      <li>Configured secure VPCs and IAM roles for access control</li>
-      <li>Implemented monitoring with CloudWatch and auditing with CloudTrail</li>
-      <li>Automated provisioning with CloudFormation templates</li>
-      <li>Developed Python scripts to manage EC2 instances and S3 buckets</li>
-    </ul>
-  </section>
+p, ul, li {
+    font-weight: 400;
+}
 
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:pmoksana.f@gmail.com">pmoksana.f@gmail.com</a></p>
-    <p>Phone: <a href="tel:+34641863643">+34 641 863 643</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/oksana-fadyeyeva" target="_blank">/oksana-fadyeyeva</a></p>
-    <p>GitHub: <a href="https://github.com/pmoksana" target="_blank">/pmoksana</a></p>
-  </section>
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
 
-  <footer>
-    <p>© 2025 Oksana Fadyeyeva</p>
-  </footer>
+a:hover {
+    color: var(--accent-color);
+}
 
-</body>
-</html>
+/* --- Layout & Structure --- */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+/* --- Hero Section --- */
+.hero {
+    background-color: var(--secondary-color);
+    color: var(--light-text-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    z-index: 1;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.pre-heading {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-top: 0.2em;
+    color: var(--light-text-color);
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--light-text-color);
+}
+
+.intro {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 1.5rem auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+/* --- Sections --- */
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5em;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--primary-color);
+    margin: 10px auto 0;
+}
+
+.section p, .section ul {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.skills-list, .projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin-top: 2em;
+}
+
+.skills-list li, .projects-list li {
+    background: var(--light-text-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    transition: transform 0.3s ease;
+}
+
+.skills-list li:hover, .projects-list li:hover {
+    transform: translateY(-5px);
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: var(--secondary-color);
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer a {
+    color: var(--light-text-color);
+}
+
+.footer .section-title {
+    color: var(--light-text-color);
+}
+
+.footer .section-title::after {
+    background: var(--light-text-color);
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* --- Animations --- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+}
