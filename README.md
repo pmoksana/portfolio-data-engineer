@@ -4,8 +4,9 @@
 
 ### About Me
 
-With 5 years of practical experience as a project manager and Scrum master in global, multinational teams, I'm transitioning my career to a technical role. As a Junior Cloud Engineer,
-i've bilt my knowleage in AWS services, Linux, Python scripting, networking, and databases data, cloud infrastructure, and automation, managing both SQL and NoSQL databases, and my passion in data and analyzing.
+
+     With 5 years of practical experience as a project manager and Scrum Master in global, multinational teams, I'm transitioning my career to a technical role. As a Data Engineer, I've built my knowledge in **SQL**, **Python**, **Machine Learning**, Linux, networking, **AWS services**, cloud infrastructure, and problem-solving. My passion lies in data science and analysis.
+          
 
 
 ---
@@ -34,7 +35,7 @@ i've bilt my knowleage in AWS services, Linux, Python scripting, networking, and
 
 * **Experience creating data visualizations in Python, using pandas to process data and Matplotlib to generate charts**
 
-#### **Cloud & DevOps**
+#### **Cloud**
 
 * **AWS Services:** EC2, S3, IAM, VPC, DynamoDB, RDS, CloudTrail, Config, Trusted Advisor
 * **DevOps Mindset:** CI/CD concepts, automation, and infrastructure as code (IaC)
@@ -46,19 +47,20 @@ i've bilt my knowleage in AWS services, Linux, Python scripting, networking, and
 * **Networking:** TCP/IP, IP addressing (IPv4), subnetting, CIDR, and network security
 * **Databases:** SQL and NoSQL (CRUD operations, schema design)
 
-#### **Programming & Automation**
+#### **Programming**
 
 * **Python:** Functions, loops, conditionals, data types
-* **Scripting:** Automating tasks and managing cloud resources
+
 
 ---
 ### 🤝 Let's Connect!
 
 |                                 |                                                                        |
 | :------------------------------ | :--------------------------------------------------------------------- |
-| 📧 **Email:** | pmoksana.f@gmail.com                                                   |
+| 📧 **Email:** | pmoksana.f@gmail.com  
+| 📞 **Phone:** | +38 095 705 88 12
 | 📞 **Phone:** | +34 641 863 643                                                        |
-| 🌐 **LinkedIn:** | [linkedin.com/in/oksana-fadyeyeva](https://www.linkedin.com/in/oksana-fadyeyeva) |
+| 🌐 **LinkedIn:** | [linkedin.com/in/oksana-f](https://www.linkedin.com/in/oksana-f) |
 | 🔗 **GitHub:** | [github.com/pmoksana](https://github.com/pmoksana)                     |
 
 ---
